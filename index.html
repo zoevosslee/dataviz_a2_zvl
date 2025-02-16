@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exploratory Visual Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.js"></script>
 </head>
 <body>
     <header>
@@ -38,6 +41,29 @@
                 Understanding the connection between gentrification and corporate ownership is important because, contrary to what many believe, displacement and gentrification are not inevitable processes. They are facilitated and, at times, actively incentivized through financial mechanisms, policies, and the absence of regulation. These ideas are explored in depth by Leslie Kern in a book I recently enjoyed reading, <em>Gentrification Is Inevitable and Other Lies.</em>
             </p>
         </section>
+
+        <section>
+            <h3>Data Overview</h3>
+            
+            <!-- Container for the Map -->
+            <div id="map-container">
+                <h4>Geospatial Visualization</h4>
+                <p>Explore how corporate ownership patterns have changed across Boston neighborhoods over time.</p>
+                <div id="map"></div>
+            </div>
+
+        </section>
     </main>
+
+    <script src="map.js" defer></script>
+
+    <div class="map-overlay top">
+        <div class="map-overlay-inner">
+            <h2>Corporate Ownership Over Time</h2>
+            <label id="year-label">Year: <span>2024</span></label>
+            <input id="year-slider" type="range" min="2004" max="2024" step="1" value="2024">
+        </div>
+    </div>    
+    
 </body>
 </html>
