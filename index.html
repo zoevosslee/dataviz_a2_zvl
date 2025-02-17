@@ -11,8 +11,13 @@
 <body>
     <header>
         <h1>Exploratory Visual Analysis</h1>
+        <h5> Zoe Voss Lee, 6.C85 Spring 2025</h5>
         <h2>Corporate Landlords + Evictions</h2>
     </header>
+
+    <div class="content-wrapper">
+        <main class="text-column">
+
 
     <main>
         <section>
@@ -43,27 +48,112 @@
         </section>
 
         <section>
-            <h3>Data Overview</h3>
+            <h3>Data Source</h3>
+            <p>
+                The dataset used for this Exploratory Visual Analysis is titled "Change Over Time in Corporate Ownership and Owner Occupancy Rates in Boston Neighborhoods with Census". It was provided by the 6.C85 Spring 2025 teaching team for the purpose of facilitating Assignment 2. It consists of data from the City of Boston and the US Census Bureau, and describes changes over time between 2004 and 2024 in corporate ownership rates and owner occupany rates within Boston neighborhoods.
+            </p>
+        </section>
+
+
+        <section class="chart">
+                <h4>Corporate Ownership Rates Increasing Over Time</h4>
             
-            <!-- Container for the Map -->
-            <div id="map-container">
-                <h4>Geospatial Visualization</h4>
-                <p>Explore how corporate ownership patterns have changed across Boston neighborhoods over time.</p>
-                <div id="map"></div>
+                <!-- First Chart -->
+                <div class="chart-container">
+                    <div class='tableauPlaceholder' id='viz1739801563980' style='position: relative'><noscript><a href='#'><img alt='Average Rates of Corporate Ownership in Boston Neighborhoods Over Time ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ZV&#47;ZVL_A2&#47;Sheet12&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='ZVL_A2&#47;Sheet12' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ZV&#47;ZVL_A2&#47;Sheet12&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1739801563980');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75,600)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                    <p class="chart-description">
+                        This visualization shows how corporate ownership rates in Boston neighborhoods have evolved over time.
+                    </p>
+                </div>
+
+            </section>
+            <section class="chart">
+                <!-- Second Chart -->
+                <h4>Corporate Ownership Rates in Different Boston Neighborhoods Over Time</h4>
+                <div class="chart-container">
+                    <div class='tableauPlaceholder' id='viz1739801594249' style='position: relative'><noscript><a href='#'><img alt='Average Rates of Corporate Ownership in Boston Neighborhoods Over Time ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ZV&#47;ZVL_A2&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='ZVL_A2&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ZV&#47;ZVL_A2&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1739801594249');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75,600)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                    <p class="chart-description">
+                        This chart explores the relationship between corporate ownership rates and eviction filings across different neighborhoods.
+                    </p>
+                </div>
+            </section>
+
+            
+            <!-- Tableau Embed Script -->
+            <script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script>
+            
+            
+ <!-- Container for Geospatial Visualization -->
+<section id="geospatial-section">
+    <h4>On the Map: Corporate Ownership Rates Increasing Over Time Across Neighborhoods</h4>
+    <p>Use the slider to explore how corporate ownership patterns have changed across Boston neighborhoods over time.</p>
+    
+    <!-- Map Container -->
+    <div id="map-container">
+        <div id="map"></div>
+
+        <!-- Controls Attached to the Map (Top-Left) -->
+        <div id="map-controls">
+            <!-- Year Slider -->
+            <div id="year-slider-container">
+                <label for="year-slider">
+                    <span id="year-label">2024</span>
+                </label>                
+                <input id="year-slider" type="range" min="2004" max="2024" step="1" value="2024">
             </div>
 
-        </section>
-    </main>
-
-    <script src="map.js" defer></script>
-
-    <div class="map-overlay top">
-        <div class="map-overlay-inner">
-            <h2>Corporate Ownership Over Time</h2>
-            <label id="year-label">Year: <span>2024</span></label>
-            <input id="year-slider" type="range" min="2004" max="2024" step="1" value="2024">
+            <!-- Legend -->
+            <div id="legend">
+                <h3>Corporate Ownership Rate</h3>
+                <div class="legend-scale">
+                    <div><span style="background:#001f3f;"></span> 0 - 10%</div>
+                    <div><span style="background:#003366;"></span> 10 - 15%</div>
+                    <div><span style="background:#004c99;"></span> 15 - 20%</div>
+                    <div><span style="background:#7a42f4;"></span> 20 - 25%</div>
+                    <div><span style="background:#9333ea;"></span> 25 - 30%</div>
+                    <div><span style="background:#c026d3;"></span> 30 - 35%</div>
+                    <div><span style="background:#ff00ff;"></span> 35%+</div>
+                </div>
+            </div>
         </div>
-    </div>    
+    </div>
+    </section>
+</section>
+</main>
+
+<aside class="blank-column">
+    <!-- Text Next to First Chart -->
+    <div class="placeholder-text">
+        <h4>Understanding Corporate Ownership Growth</h4>
+        <p>
+            This section examines how corporate ownership rates in Boston have evolved 
+            over time. We look at historical trends and their implications for housing stability.
+        </p>
+    </div>
+
+    <!-- Text Next to Second Chart -->
+    <div class="placeholder-text">
+        <h4>Corporate Ownership & Evictions</h4>
+        <p>
+            The relationship between corporate landlords and eviction rates is explored here. 
+            This visualization reveals patterns in displacement and policy implications.
+        </p>
+    </div>
+
+    <!-- Text Next to Map -->
+    <div class="placeholder-text">
+        <h4>Geospatial Patterns in Corporate Ownership</h4>
+        <p>
+            This interactive map allows you to explore how corporate ownership varies across neighborhoods, 
+            providing a spatial perspective on housing trends.
+        </p>
+    </div>
+</aside>
+</div>
+
+<!-- Load the Map Script -->
+<script src="map.js" defer></script>
+
     
 </body>
 </html>
