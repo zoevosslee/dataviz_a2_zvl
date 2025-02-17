@@ -12,7 +12,7 @@
     <header>
         <h1>Exploratory Visual Analysis</h1>
         <h5> Zoe Voss Lee, 6.C85 Spring 2025</h5>
-        <h2>Corporate Landlords + Evictions</h2>
+        <h2>Corporate Landlords + Displacement in Boston Neighborhoods</h2>
     </header>
 
     <div class="content-wrapper">
@@ -34,10 +34,10 @@
         <section>
             <h3>Motivation Behind Questions</h3>
             <p>
-                I am a volunteer journalist for a newspaper in Boston’s Chinatown. Through reporting in the neighborhood, I have learned from talking to local community leaders and residents how the recent growth in luxury development in the area is causing demographic shifts that pose an existential threat to the neighborhood’s historic status as an ethnic community of Asian immigrants and Asian Americans. Today, these populations are declining as a wealthier clientele capable of paying luxury rents moves in. 
+                I am a volunteer journalist for a newspaper in Boston’s Chinatown. Through reporting in the neighborhood, I have learned from talking to local community leaders and residents how the recent growth in luxury development is causing demographic shifts that pose an existential threat to the neighborhood’s historic status as an ethnic community of Asian immigrants and Asian Americans. Today, these populations are being displaced as a wealthier clientele capable of paying luxury rents moves in. 
             </p>
             <p>
-                Chinatown has historically faced existential threats during the highway developments of the mid-20th century and continues to experience displacement pressures due to gentrification—an example of how planning decisions have long been used as tools of exclusion. After reading Heather Vogell’s ProPublica article, <em>"When Private Equity Becomes Your Landlord,"</em> I suspect that similar patterns of historic and ongoing exclusion through corporate ownership and displacement are taking place in other communities as well.
+                Chinatown has historically faced existential threats during the highway developments of the mid-20th century and continues to experience displacement pressures due to gentrification -- an example of how planning decisions have long been used as tools of exclusion. After reading Heather Vogell’s ProPublica article, <em>"When Private Equity Becomes Your Landlord,"</em> I suspect that similar patterns of historic and ongoing exclusion through corporate ownership and displacement are taking place in other communities as well.
             </p>
             <p>
                 As an urban planner, I am interested in the histories revealed in the visibilization of the spatial fingerprints that corporate landlords are leaving on the city. Given that the dataset on corporate ownership rates spans 20 years, I anticipate that temporal patterns will emerge, revealing how corporate ownership has expanded and either preceded or followed demographic shifts. 
@@ -52,31 +52,41 @@
             <p>
                 The dataset used for this Exploratory Visual Analysis is titled "Change Over Time in Corporate Ownership and Owner Occupancy Rates in Boston Neighborhoods with Census". It was provided by the 6.C85 Spring 2025 teaching team for the purpose of facilitating Assignment 2. It consists of data from the City of Boston and the US Census Bureau, and describes changes over time between 2004 and 2024 in corporate ownership rates and owner occupany rates within Boston neighborhoods.
             </p>
+            <p>
+                Note that certain Boston geographies are missing from this dataset: Back Bay and Mission Hill were not included in the source dataset. 
+            </p>
         </section>
 
 
         <section class="chart">
-                <h4>Corporate Ownership Rates Increasing Over Time</h4>
+             <h3>Data Visual #1: Corporate Ownership Rates City-Wide Are Increasing Over Time</h3>   
             
                 <!-- First Chart -->
                 <div class="chart-container">
                     <div class='tableauPlaceholder' id='viz1739801563980' style='position: relative'><noscript><a href='#'><img alt='Average Rates of Corporate Ownership in Boston Neighborhoods Over Time ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ZV&#47;ZVL_A2&#47;Sheet12&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='ZVL_A2&#47;Sheet12' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ZV&#47;ZVL_A2&#47;Sheet12&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1739801563980');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75,600)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-                    <p class="chart-description">
-                        This visualization shows how corporate ownership rates in Boston neighborhoods have evolved over time.
-                    </p>
+
                 </div>
 
             </section>
             <section class="chart">
-                <!-- Second Chart -->
-                <h4>Corporate Ownership Rates in Different Boston Neighborhoods Over Time</h4>
+                <h3>Data Visual #2: Rates of Corporate Ownership Have Increased More in Some Neighborhoods</h3>   
                 <div class="chart-container">
                     <div class='tableauPlaceholder' id='viz1739801594249' style='position: relative'><noscript><a href='#'><img alt='Average Rates of Corporate Ownership in Boston Neighborhoods Over Time ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ZV&#47;ZVL_A2&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='ZVL_A2&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ZV&#47;ZVL_A2&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1739801594249');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75,600)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-                    <p class="chart-description">
-                        This chart explores the relationship between corporate ownership rates and eviction filings across different neighborhoods.
-                    </p>
                 </div>
             </section>
+
+            <section class="chart">
+                <h3>Data Visual #3: As Rates of Corporate Ownership Have Increased, Owner Occupied Rates Have Declined</h3>   
+                <h4>Data from 2004</h4>
+                <div class="chart-container">
+                    <div class='tableauPlaceholder' id='viz1739823029560' style='position: relative'><noscript><a href='#'><img alt='2004: Owner Occupany Rates and Corporate Ownership ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ZV&#47;ZVL_A2&#47;Sheet9&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='ZVL_A2&#47;Sheet9' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ZV&#47;ZVL_A2&#47;Sheet9&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1739823029560');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75, 600)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>                </div>
+            </section>
+            <section class="chart">
+                <h3>Data Visual #4: ... Twenty Years Later </h3>   
+                <h4>Data from 2024</h4>
+                <div class="chart-container">
+                    <div class='tableauPlaceholder' id='viz1739823360529' style='position: relative'><noscript><a href='#'><img alt='2024: Owner Occupany Rates and Corporate Ownership ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ZV&#47;ZVL_A2&#47;Sheet92&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='ZVL_A2&#47;Sheet92' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ZV&#47;ZVL_A2&#47;Sheet92&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1739823360529');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75, 600)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>           
+                 </section>
 
             
             <!-- Tableau Embed Script -->
@@ -85,7 +95,7 @@
             
  <!-- Container for Geospatial Visualization -->
 <section id="geospatial-section">
-    <h4>On the Map: Corporate Ownership Rates Increasing Over Time Across Neighborhoods</h4>
+    <h3>Data Visual #5: Mapping Corporate Ownership Rates Over Time Reveals Spatio-Temporal Patterns</h3>
     <p>Use the slider to explore how corporate ownership patterns have changed across Boston neighborhoods over time.</p>
     
     <!-- Map Container -->
@@ -118,41 +128,96 @@
         </div>
     </div>
     </section>
-</section>
+    <section>
+        <h3>Data Visual #6: Race and Corporate Landlord Exposure in Different Neighborhoods </h3>
+
+        <div class='tableauPlaceholder' id='viz1739819600784' style='position: relative'><noscript><a href='#'><img alt='Neighborhood Racial Demographics and Exposure to Corporate Landlords ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ZV&#47;ZVL_A2&#47;Sheet23&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='ZVL_A2&#47;Sheet23' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ZV&#47;ZVL_A2&#47;Sheet23&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1739819600784');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75, 600)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    </section>
+    <section>
+        <h3>Data Visual #7: Children and Corporate Landlord Exposure in Different Neighborhoods </h3>
+
+        <div class='tableauPlaceholder' id='viz1739820582960' style='position: relative'><noscript><a href='#'><img alt='Where are Children Most Exposed to Corporate Landlords in Boston? ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ZV&#47;ZVL_A2&#47;Sheet7&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='ZVL_A2&#47;Sheet7' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ZV&#47;ZVL_A2&#47;Sheet7&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1739820582960');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75,600)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    </section>
+
+
 </main>
 
 <aside class="blank-column">
-    <!-- Text Next to First Chart -->
-    <div class="placeholder-text">
-        <h4>Understanding Corporate Ownership Growth</h4>
-        <p>
-            This section examines how corporate ownership rates in Boston have evolved 
-            over time. We look at historical trends and their implications for housing stability.
-        </p>
-    </div>
+    <section class="placeholder-section">
 
-    <!-- Text Next to Second Chart -->
-    <div class="placeholder-text">
-        <h4>Corporate Ownership & Evictions</h4>
-        <p>
-            The relationship between corporate landlords and eviction rates is explored here. 
-            This visualization reveals patterns in displacement and policy implications.
-        </p>
-    </div>
+    </section>
 
-    <!-- Text Next to Map -->
-    <div class="placeholder-text">
-        <h4>Geospatial Patterns in Corporate Ownership</h4>
+    <section class="placeholder-section">
+    </section>
+
+    <section class="placeholder-section">
+
+    </section>
+
+    <section class="placeholder-section">
+        <h4>Findings</h4>
         <p>
-            This interactive map allows you to explore how corporate ownership varies across neighborhoods, 
-            providing a spatial perspective on housing trends.
+        This visualization shows how the city average of corporate ownership rates across Boston neighborhoods has evolved over time. It reveals a very clear trend towards increasing corproate ownership of the housing stock in Boston, from a 5.5% neighborhood average corporate ownership rate in 2004 up to a 25.3% rate in 2024.
+       </p> 
+
+
+    </section>
+
+    <section class="placeholder-section">
+        <h4>Findings</h4>
+        <p>
+            While corporate ownership rates have increased in every neighborhood included in this dataset (note that there are missing geographies that limit the comprehension of this data analysis), in some neighborhoods, the growth has been more pronounced than in others.
         </p>
-    </div>
+        <p>
+            While corporate ownership rates have increased in every neighborhood included in this dataset (note that there are missing geographies that limit the comprehension of this data analysis), in some neighborhoods, the growth has been more pronounced than in others.
+        </p>
+    </section>
+
+
+    <section class="placeholder-section">
+        <h4>Findings</h4>
+        <p>
+        </p>
+        <p>
+        </p>
+    </section>
+
+    <section class="placeholder-section">
+        <h4>Findings</h4>
+        <p>
+        </p>
+        <p>
+        </p>
+    </section>
+    
+    <section class="placeholder-section">
+        <h4>Findings</h4>
+        <p>
+            Starting in 2010, rates of corporate ownership began to breach 10-15% in South Boston and Downtown. This aligns with what we have read about in the recommended articles on how companies followed a "disaster capitalism" model (a concept written about by Naomi Klein, a critic of neoliberal forms of capitalism) following the 2008 recession to buy up properties.        </p>
+        <p>
+            What is interesting to see is how the rates of corporate ownership grew rapidly starting around 2020 in South Boston and Downtown, reaching into Roxbury and Allston—two neighborhoods that I know from anecdotal evidence are experiencing gentrification. The timeline of corporate ownership growth in Boston, which appears to have accelerated in the past four years, coincides with the Covid-19 pandemic. Seeing private control of the housing market grow in relationship to "shocks" (i.e., the recession and pandemic) may speak to a broader strategy of market capitalization in the wake of catastrophes, which, of course, suggests ongoing and worsening patterns of exploitation.        </p>
+    </section>
+    <section class="placeholder-section">
+        <h4>Findings</h4>
+        <p>
+            Starting in 2010, rates of corporate ownership began to breach 10-15% in South Boston and Downtown. This aligns with what we have read about in the recommended articles on how companies followed a "disaster capitalism" model (a concept written about by Naomi Klein, a critic of neoliberal forms of capitalism) following the 2008 recession to buy up properties.        </p>
+        <p>
+            What is interesting to see is how the rates of corporate ownership grew rapidly starting around 2020 in South Boston and Downtown, reaching into Roxbury and Allston—two neighborhoods that I know from anecdotal evidence are experiencing gentrification. The timeline of corporate ownership growth in Boston, which appears to have accelerated in the past four years, coincides with the Covid-19 pandemic. Seeing private control of the housing market grow in relationship to "shocks" (i.e., the recession and pandemic) may speak to a broader strategy of market capitalization in the wake of catastrophes, which, of course, suggests ongoing and worsening patterns of exploitation.        </p>
+    </section>
+    <section class="placeholder-section">
+        <h4>Findings</h4>
+        <p>
+            Starting in 2010, rates of corporate ownership began to breach 10-15% in South Boston and Downtown. This aligns with what we have read about in the recommended articles on how companies followed a "disaster capitalism" model (a concept written about by Naomi Klein, a critic of neoliberal forms of capitalism) following the 2008 recession to buy up properties.        </p>
+        <p>
+            What is interesting to see is how the rates of corporate ownership grew rapidly starting around 2020 in South Boston and Downtown, reaching into Roxbury and Allston—two neighborhoods that I know from anecdotal evidence are experiencing gentrification. The timeline of corporate ownership growth in Boston, which appears to have accelerated in the past four years, coincides with the Covid-19 pandemic. Seeing private control of the housing market grow in relationship to "shocks" (i.e., the recession and pandemic) may speak to a broader strategy of market capitalization in the wake of catastrophes, which, of course, suggests ongoing and worsening patterns of exploitation.        </p>
+    </section>
 </aside>
 </div>
 
 <!-- Load the Map Script -->
 <script src="map.js" defer></script>
+
+
 
     
 </body>
