@@ -59,7 +59,7 @@ h5 {
 /* Ensure the text-column and blank-column sections follow the required heights */
 .text-column section:nth-child(1),
 .blank-column section:nth-child(1) {
-    height: 270px;
+    height: 230px;
     overflow: hidden; /* Ensures content does not exceed defined height */
 }
 .text-column section:nth-child(2),
@@ -69,12 +69,12 @@ h5 {
 }
 .text-column section:nth-child(3),
 .blank-column section:nth-child(3) {
-    height: 150px;
+    height: 210px;
     overflow: hidden; /* Ensures content does not exceed defined height */
 }
 
-.text-column section:nth-child(n+4):nth-child(-n+10),
-.blank-column section:nth-child(n+4):nth-child(-n+10) {
+.text-column section:nth-child(n+4):nth-child(-n+11),
+.blank-column section:nth-child(n+4):nth-child(-n+11) {
     height: 700px;
     overflow: hidden;
 }
@@ -197,3 +197,40 @@ section {
     border-radius: 3px;
 }
 
+footer {
+    background-color: #000000; /* Dark background for contrast */
+    color: #fff; /* White text */
+    padding: 20px;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    border-top: 2px solid #444; /* Subtle top border */
+}
+
+footer h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+footer ol {
+    list-style: decimal;
+    padding-left: 20px;
+}
+
+footer li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+footer strong {
+    color: #f8f8f8; /* Slightly brighter white for emphasis */
+}
+
+footer a {
+    color: #f8c471; /* Light accent color for any links */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
